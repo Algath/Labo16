@@ -9,9 +9,9 @@ trait ArrayFactory {
 object RandomArrayFactory extends ArrayFactory {
   override def create(size: Int): Array[Int] = {
 
-    var t:Array[Int] = Array.ofDim(size)
+    var t: Array[Int] = Array.ofDim(size)
 
-    for(i:Int <- 0 until size){
+    for (i: Int <- 0 until size) {
       t(i) = Random.nextInt(size + 1)
     }
 
@@ -26,7 +26,7 @@ object InvertedSortedArrayFactory extends ArrayFactory {
 
     var t: Array[Int] = Array.ofDim(size)
 
-    for (i: Int <- 1 until size + 1) {
+    for (i: Int <- 0 until size) {
       t(i) = size - i
     }
 
@@ -41,14 +41,14 @@ object ShuffleArrayFactory extends ArrayFactory {
 
     var t: Array[Int] = Array.ofDim(size)
 
-    var p:Int = 0
+    var p: Int = 0
     for (i: Int <- 0 until size) {
 
-      if(i % 2 == 0) {
+      if (i % 2 == 0) {
         t(i) = p
         p += 1
       }
-      else{
+      else {
         t(i) = size - p
       }
 
@@ -62,27 +62,27 @@ object ShuffleArrayFactory extends ArrayFactory {
 
 object AlmostSortedArrayFactory extends ArrayFactory {
 
-  var percent:Int = 100
+  var percent: Int = 20
 
   override def create(size: Int): Array[Int] = {
 
-    var t:Array[Int] = Array.ofDim(size)
+    var t: Array[Int] = Array.ofDim(size)
 
     for (i: Int <- 0 until size) {
       t(i) = i
     }
 
-    for (i: Int <- 0 until percent / 2) {
+    for (i: Int <- 0 until (percent * size / 100) / 2) {
 
-      var r:Int = Random.nextInt(size / 2)
+      var r: Int = Random.nextInt(size / 2)
 
-      var x:Int = t(r)
-      t(r) = t(size - r)
-      t(size - r) = x
+      var x: Int = t(r)
+      t(r) = t(size - 1 - r)
+      t(size - 1 - r) = x
 
     }
 
-  return t
+    return t
 
   }
 
