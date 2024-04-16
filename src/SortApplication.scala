@@ -2,7 +2,7 @@ object SortApplication extends App {
   class SortApplication {
     def displayArray(n: Array[Int]): Unit = {
       for (i <- n.indices) {
-        println(n(i))
+        println(s"a[$i] = ${n(i)}")
       }
     }
   }
