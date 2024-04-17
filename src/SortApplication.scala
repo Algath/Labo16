@@ -5,20 +5,11 @@ object SortApplication extends App {
         println(s"a[$i] = ${n(i)}")
       }
     }
-
-
   }
 
   var test: SortApplication = new SortApplication
-//    test.displayArray(RandomArrayFactory.create(10))
-    test.displayArray(InvertedSortedArrayFactory.create(177))
-//  println
-//    test.displayArray(ShuffleArrayFactory.create(7))
-//    test.displayArray(AlmostSortedArrayFactory.create(10))
-//    test.displayArray(SelectionSort.sort(InvertedSortedArrayFactory.create(10)))
-
-//  var i = (177 to 0 by -1).toArray
-//  println(i.mkString(","))
-
-
+  //  test.displayArray(RandomArrayFactory.create(10))
+  //  test.displayArray(InvertedSortedArrayFactory.create(10))
+  //  test.displayArray(ShuffleArrayFactory.create(7))
+  //  test.displayArray(AlmostSortedArrayFactory.create(10))
 }
