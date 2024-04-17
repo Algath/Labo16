@@ -40,6 +40,8 @@ class ArrayFactorySpec extends propspec.AnyPropSpec with TableDrivenPropertyChec
       (177 to 0 by -1).toArray,
     )
 
+  /*
+  * Array créée doit ressembler à l'array au dessus*/
   property("The InvertedSortedArrayFactory should create arrays that looks like") {
     forAll(invertedSortedArrayFactoryValues) { v =>
       InvertedSortedArrayFactory.create(v.length) should be (v)

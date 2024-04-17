@@ -18,7 +18,6 @@ object RandomArrayFactory extends ArrayFactory {
     return t
 
   }
-
 }
 
 object InvertedSortedArrayFactory extends ArrayFactory {
@@ -27,7 +26,7 @@ object InvertedSortedArrayFactory extends ArrayFactory {
     var t: Array[Int] = Array.ofDim(size)
 
     for (i: Int <- 0 until size) {
-      t(i) = size - i
+      t(i) = size - i - 1
     }
 
     return t
