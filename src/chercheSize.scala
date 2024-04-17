@@ -9,7 +9,7 @@ object chercheSize extends App {
 
       var time:Int = 15
       var size:Int = 10000
-      while (time < 9 || time > 11) {
+      while (time < 900 || time > 1100) {
 
         var a: Array[Int] = RandomArrayFactory.create(size)
 
@@ -18,11 +18,10 @@ object chercheSize extends App {
         var t2 = System.nanoTime()
 
         time = ((t2 - t1) / 1000000).toInt
-        //println(time)
 
-        if(time > 11)
+        if(time > 1100)
           size -= size / 2
-        else if (time < 9)
+        else if (time < 900)
           size += size / 2
 
       }
@@ -34,7 +33,7 @@ object chercheSize extends App {
 
       var time: Int = 0
       var size: Int = 10000
-      while (time < 9 && time > 11) {
+      while (time < 900 || time > 1100) {
 
         var a: Array[Int] = RandomArrayFactory.create(size)
 
@@ -44,9 +43,9 @@ object chercheSize extends App {
 
         time = ((t2 - t1) / 1000000).toInt
 
-        if (time > 11)
+        if (time > 1100)
           size -= size / 2
-        else if (time < 9)
+        else if (time < 900)
           size += size / 2
 
       }
@@ -59,6 +58,6 @@ object chercheSize extends App {
   }
 
 
-  println(SearchSize(SELECTIONSORT))
+  println(SearchSize(YSORT))
 
 }
