@@ -5,6 +5,8 @@ object SortApplication extends App {
         println(s"a[$i] = ${n(i)}")
       }
     }
+
+
   }
 
   var test: SortApplication = new SortApplication
