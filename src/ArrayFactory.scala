@@ -41,7 +41,6 @@ object ShuffleArrayFactory extends ArrayFactory {
     }
     return t
   }
-
 }
 
 object AlmostSortedArrayFactory extends ArrayFactory {

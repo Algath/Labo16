@@ -14,10 +14,8 @@ object chercheSize extends App {
 
         time = ((t2 - t1) / 1000000).toInt
 
-        if(time > 1100)
-          size -= size / 2
-        else if (time < 900)
-          size += size / 2
+        if(time > 1100) size -= size / 2
+        else if (time < 900) size += size / 2
       }
       size
     }
@@ -32,14 +30,11 @@ object chercheSize extends App {
 
         time = ((t2 - t1) / 1000000).toInt
 
-        if (time > 1100)
-          size -= size / 2
-        else if (time < 900)
-          size += size / 2
+        if (time > 1100) size -= size / 2
+        else if (time < 900) size += size / 2
       }
       size
-    }else
-      -1
+    }else -1
   }
   println(SearchSize(YSORT))
 }
