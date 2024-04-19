@@ -8,13 +8,8 @@ object SortApplication extends App {
   }
 
   var test: SortApplication = new SortApplication
-//    test.displayArray(RandomArrayFactory.create(10))
-    test.displayArray(InvertedSortedArrayFactory.create(177))
-//  println
-//    test.displayArray(ShuffleArrayFactory.create(7))
-//    test.displayArray(AlmostSortedArrayFactory.create(10))
-//    test.displayArray(SelectionSort.sort(InvertedSortedArrayFactory.create(10)))
-
-  test_duree.testSelectionSort()
-  test_duree.testYSort()
+  //  test.displayArray(RandomArrayFactory.create(10))
+  //  test.displayArray(InvertedSortedArrayFactory.create(10))
+  //  test.displayArray(ShuffleArrayFactory.create(7))
+  //  test.displayArray(AlmostSortedArrayFactory.create(10))
 }
