@@ -5,8 +5,6 @@ object SortApplication extends App {
         println(s"a[$i] = ${n(i)}")
       }
     }
-
-
   }
 
   var test: SortApplication = new SortApplication
@@ -17,8 +15,6 @@ object SortApplication extends App {
 //    test.displayArray(AlmostSortedArrayFactory.create(10))
 //    test.displayArray(SelectionSort.sort(InvertedSortedArrayFactory.create(10)))
 
-//  var i = (177 to 0 by -1).toArray
-//  println(i.mkString(","))
-
-
+  test_duree.testSelectionSort()
+  test_duree.testYSort()
 }
